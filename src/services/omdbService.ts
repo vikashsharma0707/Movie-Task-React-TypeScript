@@ -25,7 +25,9 @@
 import { Movie, SearchResult } from '../types/movie';
 
 const API_KEY = import.meta.env.VITE_OMDB_API_KEY; // ✅ use from .env
-const BASE_URL = 'http://www.omdbapi.com/';
+// const BASE_URL = 'http://www.omdbapi.com/';
+const BASE_URL = 'https://www.omdbapi.com/';
+
 
 if (!API_KEY) {
   throw new Error('OMDb API key is missing. Please set VITE_OMDB_API_KEY in your .env file.');
