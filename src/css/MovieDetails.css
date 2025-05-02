@@ -1,0 +1,151 @@
+.movie-details-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px; /* Add margin to account for sticky navbar height */
+}
+
+.movie-details-header {
+  display: flex;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details-poster {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movie-details-info {
+  flex: 1;
+}
+
+.movie-details-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.movie-details-meta {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.movie-details-director {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.movie-details-plot {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.movie-details-ratings {
+  display: flex;
+  gap: 1rem;
+}
+
+.rating {
+  background-color: #f4f4f9;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 2rem;
+}
+
+.error {
+  color: #ff4d4d;
+}
+
+/* Responsive Movie Details */
+@media (max-width: 768px) {
+  .movie-details-container {
+    padding: 1rem;
+    margin-top: 120px; /* Adjust for taller navbar on smaller screens */
+  }
+
+  .movie-details-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .movie-details-poster {
+    width: 200px;
+    height: 300px;
+  }
+
+  .movie-details-title {
+    font-size: 1.5rem;
+  }
+
+  .movie-details-meta,
+  .movie-details-director,
+  .movie-details-plot {
+    font-size: 0.9rem;
+  }
+
+  .rating {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-details-container {
+    padding: 0.5rem;
+    margin-top: 140px; /* Adjust for even taller navbar on mobile */
+  }
+
+  .movie-details-header {
+    padding: 1rem;
+  }
+
+  .movie-details-poster {
+    width: 150px;
+    height: 225px;
+  }
+
+  .movie-details-title {
+    font-size: 1.25rem;
+  }
+
+  .movie-details-meta,
+  .movie-details-director,
+  .movie-details-plot {
+    font-size: 0.85rem;
+  }
+
+  .movie-details-ratings {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .rating {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .loading, .error {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,45 @@
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.favorite-button:hover {
+  transform: scale(1.2);
+}
+
+.favorite-icon {
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.favorited .favorite-icon {
+  fill: #ff6b6b;
+  stroke: #ff6b6b;
+}
+
+/* Responsive Favorite Button */
+@media (max-width: 768px) {
+  .favorite-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .favorite-button {
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .favorite-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .favorite-button {
+    padding: 0.3rem;
+  }
+}
